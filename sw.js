@@ -1,6 +1,6 @@
 /* Karina Assistent — Service Worker: App-Dateien für Offline-Betrieb cachen.
    Daten liegen NICHT hier, sondern in localStorage — der Cache betrifft nur den App-Code. */
-const CACHE = 'karina-assistent-v1';
+const CACHE = 'karina-assistent-v2';
 const FILES = [
   './',
   './index.html',
@@ -9,18 +9,18 @@ const FILES = [
   './icon-192.png',
   './icon-512.png',
   './manifest.webmanifest',
-  './js/util.js',
-  './js/zip.js',
-  './js/store.js',
-  './js/app.js',
-  './js/dictate.js',
-  './js/inbox.js',
-  './js/overview.js',
-  './js/tasks.js',
-  './js/kanban.js',
-  './js/calendar.js',
-  './js/notes.js',
-  './js/timer.js'
+  './util.js',
+  './zip.js',
+  './store.js',
+  './app.js',
+  './dictate.js',
+  './inbox.js',
+  './overview.js',
+  './tasks.js',
+  './kanban.js',
+  './calendar.js',
+  './notes.js',
+  './timer.js'
 ];
 
 self.addEventListener('install', (e) => {
